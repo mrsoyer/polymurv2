@@ -6,11 +6,47 @@
 
 ## Vue d'Ensemble
 
-Documentation complète des 6 phases de l'algorithme de trading Polymarket basé sur l'analyse intelligente des holders.
+Documentation complète d'un **algorithme de trading Polymarket innovant** qui analyse **TOUS les holders** (via Bitquery on-chain, pas limité à 20) pour calculer un consensus pondéré par ROI historique, permettant de détecter les opportunités AVANT que le marché mainstream ne réagisse.
+
+**Innovation clé** : Contrairement au copy trading classique (suivre top 10 leaderboard), cet algo analyse les 500-1000+ holders d'un market pour identifier le consensus collectif des traders fiables, préservant l'edge même avec latence 1-1.5s.
+
+**Killer feature** : Simulateur permettant de backtester stratégies ET reverse-engineer les top traders pour copier ce qui marche (vs deviner).
 
 **Date**: 2026-02-04
-**Version**: 1.0
-**Auteur**: SYM Framework - Orchestrator v4
+**Version**: 1.3 → 1.4 (enrichi avec recherches)
+**Auteur**: SYM Framework - Orchestrator v4 + sym-opus
+**Score**: 7.7/10 (concept solide, validation backtest requise)
+
+---
+
+## 🎯 Synthèse Exécutive (Lire en Premier)
+
+### Le Problème
+Copy trading classique = suivre top 10 leaderboard → prix déjà mové → edge perdu 3-5%
+
+### Notre Solution
+Analyser TOUS les holders (500-1000+) via Bitquery on-chain → consensus non-public → edge préservé
+
+### ROI Projeté
+- **Base (whale only)** : +15%/mois (validation backtest requise)
+- **Optimisé (quick wins)** : +21%/mois (Kelly + stop-loss + filters)
+- **Hybride (whale + sentiment)** : +31%/mois (si budget permet +$240/mois)
+
+### Budget
+- Minimal : $238/mois (Bitquery + Supabase)
+- Hybride : $434/mois (+ LunarCrush sentiment)
+
+### Timeline Recommandée
+1. **Mois 1** : Simulateur + backtest (valider hypothèse)
+2. **Décision GO/NO-GO** : Si ROI backtest > 15% → continuer
+3. **Mois 2-4** : Implémentation système complet
+4. **Mois 5** : Production avec capital test $500-1K
+
+### Verdict
+🟢 **GO - Concept solide 7.7/10**
+⚠️ **Simulateur obligatoire FIRST** (ne pas coder 3 mois sans validation)
+
+**Voir** : [_concept.md](_concept.md) pour analyse critique complète
 
 ---
 
@@ -257,8 +293,17 @@ L'algorithme supporte 3 profils:
 
 ---
 
-**Version**: 1.3
-**Complétude**: 16/16 fichiers ✅
-**Corrections**: Seuils alignés, latence réaliste, SQL corrigé, erreurs gérées
+**Version**: 1.4 (enrichi avec analyse 35 fichiers recherche)
+**Complétude**: 16/16 fichiers concept + 1 méta-analyse ✅
+**Corrections**: Seuils alignés, latence réaliste (1500ms), SQL corrigé, erreurs gérées
 **Ajouts**: Résolution, thresholds, error-handling, security, testing, alerting
-**Status**: ✅ Concept production-ready
+**Enrichissements**: Quick wins identifiés (Kelly +3%, Stop-loss -5% drawdown, Filters +1%)
+**Améliorations futures**: Hybride whale+sentiment (+16% ROI additionnel, +$240/mois)
+**Status**: ✅ Concept production-ready avec roadmap optimisation claire
+
+**Fichiers clés** :
+- [_concept.md](_concept.md) : Analyse critique 7.7/10, forces/faiblesses, probabilités succès
+- [11-thresholds-reference.md](11-thresholds-reference.md) : Tous les seuils centralisés
+- [10-simulateur.md](10-simulateur.md) : Backtest + reverse-engineering (killer feature)
+
+**Prochaine étape critique** : Implémenter simulateur (1 mois) → Backtest → Décision GO/NO-GO

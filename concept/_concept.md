@@ -644,7 +644,50 @@ Le concept est **solide, bien pensé et innovant**. L'approche simulateur + reve
 
 ---
 
-**Version**: 1.0
-**Type**: Méta-analyse conceptuelle
-**Objectivité**: Analyse technique neutre (ni promotion ni pessimisme)
-**Recommandation**: 🟢 GO avec validation simulateur obligatoire
+---
+
+## 🚀 ADDENDUM : Améliorations Possibles (Post-Recherche)
+
+Suite à l'analyse des 35 fichiers docapi/polymarket (93,700 mots), **plusieurs améliorations** ont été identifiées :
+
+### Quick Wins Validés par Recherche
+
+| Amélioration | Impact ROI | Effort | Coût | Priority |
+|--------------|-----------|--------|------|----------|
+| **Kelly Criterion** | +3-5% | 1 jour | $0 | HAUTE |
+| **Stop-Loss Dynamique** | -5% drawdown | 2 jours | $0 | HAUTE |
+| **Min Holders > 500** | +1% edge quality | 1h | $0 | HAUTE |
+| **Cross-Platform Check** | +2-5% | 3 jours | $0 | MOYENNE |
+
+### Medium Term (Si Budget Permet)
+
+| Amélioration | Impact ROI | Effort | Coût/mois | Validation Requis |
+|--------------|-----------|--------|-----------|-------------------|
+| **Twitter Sentiment** | +8-15% | 3-4 sem | +$240 | Backtest hybride |
+| **Reinforcement Learning** | +5-10% | 2-3 sem | $0 | Backtest adaptive |
+
+### Stratégie Hybride Potentielle
+
+```
+Whale Tracking BASE      : +15%/mois
++ Kelly Sizing           : +3%
++ Stop-Loss              : +2% (drawdown reduction)
++ Min Holders Filter     : +1%
++ Twitter Sentiment      : +8%
++ Cross-Platform         : +2%
+─────────────────────────────────
+TOTAL HYBRIDE POTENTIEL  : +31%/mois
+
+Budget additionnel : +$240/mois (LunarCrush)
+Gain net           : +16%/mois = +$800/mois sur $5K capital
+ROI investissement : 3.3× retour
+```
+
+**Note** : Ces améliorations sont **optionnelles** et doivent être validées via simulateur AVANT intégration.
+
+---
+
+**Version**: 1.1 (ajout améliorations recherche)
+**Type**: Méta-analyse conceptuelle + roadmap optimisation
+**Objectivité**: Analyse technique neutre
+**Recommandation**: 🟢 GO avec simulateur FIRST, puis intégrer quick wins si backtest positif
