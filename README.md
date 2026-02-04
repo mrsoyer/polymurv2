@@ -4,11 +4,14 @@ This repository contains comprehensive documentation and research on Polymarket 
 
 ## Structure
 
-- **`.cursor/rules/docapi/polymarket/`** - Complete Polymarket API documentation and trading strategies
+- **`polymarket/`** - Complete Polymarket API documentation and trading strategies
   - `algorithms/` - Trading algorithms (sentiment analysis, on-chain tracking, market making, ML/NLP)
   - `tools/` - External tools and platforms
   - `websocket-api.md` - Real-time WebSocket API documentation
   - `limitations.md` - API limitations and best practices
+- **`concept/`** - Trading system phases and architecture
+  - Phase documentation (seeding, discovery, enrichment, signals, monitoring)
+  - Risk management and testing strategies
 
 ## Content
 
@@ -25,7 +28,10 @@ This repository contains comprehensive documentation and research on Polymarket 
 
 ## Getting Started
 
-Browse the documentation in `.cursor/rules/docapi/polymarket/` to explore different trading strategies and implementation guides.
+Browse the documentation:
+- **`polymarket/`** - API documentation and trading algorithms
+- **`concept/`** - Trading system phases and architecture
+- **`docs/research/`** - Research reports and benchmarks
 
 ## License
 
